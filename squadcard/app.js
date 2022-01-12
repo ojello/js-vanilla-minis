@@ -45,5 +45,4 @@ let detail = data.map(function(item){
     return '<div>' + item.name + ' '+ ' is' + item.age + ' years old' + '</div>';
 });
 
-
-
+info.innerHTML = detail.join('\n');
