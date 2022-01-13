@@ -45,7 +45,7 @@ function createBoard() {
 for (let i = 0; i < cardArray.length; i++){
     var card = document.createElement('img')
     // linking it to relative path image 'blank'
-    card.setAttribute('src', 'memory/images/empty.png')
+    card.setAttribute('src', '/Users/kistb/Documents/js-vanilla-minis/memory/images/fpastel.jpeg')
     // give each image a data-id
     card.setAttribute('data-id', i)
     // card.addEventListener('click', flipcard)
