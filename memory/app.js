@@ -13,7 +13,7 @@ const cardArray = [
     },
     {
         name: 'lift',
-        img: 'memory/images/lift.png'
+        img: 'memory/images/lift.jpeg'
     },
     {
         name: 'lolipop',
@@ -21,11 +21,11 @@ const cardArray = [
     },
     {
         name: 'peach',
-        img: 'memory/images/peach.jpeg'
+        img: 'memory/images/peach.png'
     },
     {
         name: 'squish',
-        img: 'memory/images/squish.jpeg'
+        img: 'memory/images/squish.png'
     },
     {
         name: 'uwu',
@@ -33,7 +33,7 @@ const cardArray = [
     },
     {
         name: 'wfish',
-        img: '/Users/kistb/Documents/js-vanilla-minis/memory/images/wfish.jpeg'
+        img: '/js-vanilla-minis/memory/images/wfish.png'
     },
 ]
 
@@ -54,7 +54,7 @@ function createBoard() {
 for (let i = 0; i < cardArray.length; i++){
     const card = document.createElement('img')
     // linking it to relative path image 'blank'
-    card.setAttribute('src', '/Users/kistb/Documents/js-vanilla-minis/memory/images/fpastel.jpeg')
+    card.setAttribute('src', '/js-vanilla-minis/memory/images/fpastel.png')
     // give each image a data-id
     card.setAttribute('data-id', i)
     card.addEventListener('click', flipCard)
@@ -70,13 +70,13 @@ function checkForMatch() {
     if (cardsChosen[0] === cardsChosen[1]){
         // if cards match
         alert('you found a match')
-        cards[optionOneId].setAttribute('src', '/Users/kistb/Documents/js-vanilla-minis/meory/images/empty.png')
-        cards[optionTwoId].setAttribute('src', '/Users/kistb/Documents/js-vanilla-minis/memory/images/empty.png')
+        cards[optionOneId].setAttribute('src', '/js-vanilla-minis/meory/images/empty.png')
+        cards[optionTwoId].setAttribute('src', '/js-vanilla-minis/memory/images/empty.png')
         cardsWon.push(cardsChosen)
     // if no match
     } else{
-        cards[optionOneId].setAttribute('src', '/Users/kistb/Documents/js-vanilla-minis/memory/images/fpastel.jpeg')
-        cards[optionTwoId].setAttribute('src', '/Users/kistb/Documents/js-vanilla-minis/memory/images/fpastel.jpeg')
+        cards[optionOneId].setAttribute('src', '/js-vanilla-minis/memory/images/fpastel.jpeg')
+        cards[optionTwoId].setAttribute('src', '/js-vanilla-minis/memory/images/fpastel.jpeg')
         alert('Not a match, try again!')
     } 
     cardsChosen = []
