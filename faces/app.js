@@ -9,7 +9,6 @@ wink.addEventListener('click', () =>{
         wink.classList.remove('active');
     }
 })
-
 coy.addEventListener('click', () =>{
     if(wink.classList.contains('closed')){
         wink.classList.add('active');
