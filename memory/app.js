@@ -5,36 +5,69 @@ document.addEventListener('DOMContentLoaded', () => {
 const cardArray = [
     {
         name: 'fish',
-        img: 'memory/images/fish.png'
+        img: '../memory/images/fish.png'
     },
     {
         name: 'icecream',
-        img: 'memory/images/icecream.png'
+        img: '../memory/images/icecream.png'
     },
     {
         name: 'lift',
-        img: 'memory/images/lift.jpeg'
+        img: '../memory/images/lift.png'
     },
     {
         name: 'lolipop',
-        img: 'memory/images/lolipop.png'
+        img: '../memory/images/lolipop.png'
     },
     {
         name: 'peach',
-        img: 'memory/images/peach.png'
+        img: '../memory/images/peach.png'
     },
     {
         name: 'squish',
-        img: 'memory/images/squish.png'
+        img: '../memory/images/squish.png'
     },
     {
         name: 'uwu',
-        img: 'memory/images/uwu.png'
+        img: '../memory/images/uwu.png'
     },
     {
         name: 'wfish',
-        img: '/js-vanilla-minis/memory/images/wfish.png'
+        img: '../memory/images/wfish.png'
     },
+    {
+        name: 'fish',
+        img: '../memory/images/fish.png'
+    },
+    {
+        name: 'icecream',
+        img: '../memory/images/icecream.png'
+    },
+    {
+        name: 'lift',
+        img: '../memory/images/lift.png'
+    },
+    {
+        name: 'lolipop',
+        img: '../memory/images/lolipop.png'
+    },
+    {
+        name: 'peach',
+        img: '../memory/images/peach.png'
+    },
+    {
+        name: 'squish',
+        img: '../memory/images/squish.png'
+    },
+    {
+        name: 'uwu',
+        img: '../memory/images/uwu.png'
+    },
+    {
+        name: 'wfish',
+        img: '../memory/images/wfish.png'
+    }
+    
 ]
 
 cardArray.sort(()=> .5 - Math.random())
@@ -54,7 +87,7 @@ function createBoard() {
 for (let i = 0; i < cardArray.length; i++){
     const card = document.createElement('img')
     // linking it to relative path image 'blank'
-    card.setAttribute('src', '/js-vanilla-minis/memory/images/fpastel.png')
+    card.setAttribute('src', '../memory/images/fpastel.png')
     // give each image a data-id
     card.setAttribute('data-id', i)
     card.addEventListener('click', flipCard)
@@ -70,13 +103,13 @@ function checkForMatch() {
     if (cardsChosen[0] === cardsChosen[1]){
         // if cards match
         alert('you found a match')
-        cards[optionOneId].setAttribute('src', '/js-vanilla-minis/meory/images/empty.png')
-        cards[optionTwoId].setAttribute('src', '/js-vanilla-minis/memory/images/empty.png')
+        cards[optionOneId].setAttribute('src', '../memory/images/empty.png')
+        cards[optionTwoId].setAttribute('src', '../memory/images/empty.png')
         cardsWon.push(cardsChosen)
     // if no match
     } else{
-        cards[optionOneId].setAttribute('src', '/js-vanilla-minis/memory/images/fpastel.jpeg')
-        cards[optionTwoId].setAttribute('src', '/js-vanilla-minis/memory/images/fpastel.jpeg')
+        cards[optionOneId].setAttribute('src', '../memory/images/fpastel.png')
+        cards[optionTwoId].setAttribute('src', '../memory/images/fpastel.png')
         alert('Not a match, try again!')
     } 
     cardsChosen = []
