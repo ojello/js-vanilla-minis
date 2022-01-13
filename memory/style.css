@@ -10,17 +10,19 @@
   width: 400px;
   margin: auto;
 }
-.title {
+h1 {
   text-align: center;
   /* margin: 20px 20px; */
-  margin-top: 50px;
   font-size: 50px;
   color: rgb(255, 170, 231);
 }
 
 h3 {
+  margin-top: 30px;
   font-size: 40px;
-  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 body {
